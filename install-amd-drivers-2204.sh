@@ -11,7 +11,7 @@ sudo chmod -Rv 700 /var/cache/apt/archives/partial/
 sudo apt install ./amdgpu-install_7.1.70100-1_all.deb -y
 sudo apt update
 sudo apt install python3-setuptools python3-wheel -y
-sudo usermod -a -G render,video $LOGNAME # Add the current user to the render and video groups
+sudo usermod -a -G render,video $USER # Add the current user to the render and video groups
 sudo apt install rocm -y
 
 sudo apt update
@@ -19,7 +19,7 @@ sudo apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)"
 sudo apt install amdgpu-dkms -y
 
 sudo apt install environment-modules -y
-sudo usermod -a -G video,render $LOGNAME
+sudo usermod -a -G video,render $USER
 echo 'ADD_EXTRA_GROUPS=1' | sudo tee -a /etc/adduser.conf
 echo 'EXTRA_GROUPS=video' | sudo tee -a /etc/adduser.conf
 echo 'EXTRA_GROUPS=render' | sudo tee -a /etc/adduser.conf
@@ -33,8 +33,8 @@ sudo apt install ./amdgpu-insecure-instinct-udev-rules_30.10.1.0-2212064.22.04_a
 
 
 sudo groupadd devteam
-sudo usermod -a -G devteam cpoc
-sudo usermod -a -G render cpoc
-sudo usermod -a -G video cpoc
+sudo usermod -a -G devteam $USER
+sudo usermod -a -G render $USER
+sudo usermod -a -G video $USER
 sudo udevadm control --reload-rules && sudo udevadm trigger
 sudo reboot
