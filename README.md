@@ -9,7 +9,7 @@ git clone https://github.com/cpoc-internal/c885-amd-drivers.git
 2. ROOT mode excute the sh file to install the drivers
 ```
 chmod +x /root/c885-amd-drivers/install-amd-drivers-2204.sh
-sudo -u root /rootc885-amd-drivers/install-amd-drivers-2204.sh
+sudo -u root /root/c885-amd-drivers/install-amd-drivers-2204.sh
 ```
 2.1 NOn ROOT
 ```
