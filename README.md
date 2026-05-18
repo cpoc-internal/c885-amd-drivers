@@ -31,3 +31,16 @@ Server 2
  chmod +x netplan-config-2.sh
  ./netplan-config-2.sh
 ```
+
+Server 1 pollara
+```
+ chmod +x netplan-pollara-1.sh
+ ./netplan-pollara-1.sh
+```
+
+Server 2 pollara
+```
+ chmod +x netplan-pollara-2.sh
+ ./netplan-pollara-2.sh
+```
+
