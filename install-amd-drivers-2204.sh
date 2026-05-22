@@ -31,6 +31,10 @@ sudo chown -Rv _apt:root /var/cache/apt/archives/partial/
 sudo chmod -Rv 700 /var/cache/apt/archives/partial/
 sudo apt install ./amdgpu-insecure-instinct-udev-rules_30.10.1.0-2212064.22.04_all.deb
 
+sudo apt install lldpd -y
+sudo systemctl start lldpd
+sudo systemctl enable lldpd
+sudo systemctl status lldpd
 
 sudo groupadd devteam
 sudo usermod -a -G devteam root
