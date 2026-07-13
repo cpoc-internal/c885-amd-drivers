@@ -10,8 +10,8 @@ sudo tee "$NETPLAN_FILE" > /dev/null << EOF
 network:
     version: 2
     ethernets:
-        enp86s0:
-            mtu: 9216
+        enp87s0:
+            mtu: 9000
             addresses:
             - 192.168.200.11/24
             nameservers:
@@ -21,8 +21,8 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp108s0:
-            mtu: 9216
+        enp109s0:
+            mtu: 9000
             addresses:
             - 192.168.200.12/24
             nameservers:
@@ -32,8 +32,8 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp38s0:
-            mtu: 9216
+        enp39s0:
+            mtu: 9000
             addresses:
             - 192.168.200.13/24
             nameservers:
@@ -43,8 +43,8 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp12s0:
-            mtu: 9216
+        enp13s0:
+            mtu: 9000
             addresses:
             - 192.168.200.14/24
             nameservers:
@@ -54,8 +54,8 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp244s0:
-            mtu: 9216
+        enp245s0:
+            mtu: 9000
             addresses:
             - 192.168.200.15/24
             nameservers:
@@ -65,8 +65,8 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
         
-        enp208s0:
-            mtu: 9216
+        enp209s0:
+            mtu: 9000
             addresses:
             - 192.168.200.16/24
             nameservers:
@@ -76,8 +76,8 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp146s0:
-            mtu: 9216
+        enp147s0:
+            mtu: 9000
             addresses:
             - 192.168.200.17/24
             nameservers:
@@ -87,8 +87,8 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp159s0:
-            mtu: 9216
+        enp160s0:
+            mtu: 9000
             addresses:
             - 192.168.200.18/24
             nameservers:
@@ -98,30 +98,16 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
         ens211f0np0:
-            mtu: 9216
+            mtu: 9000
             addresses:
             - 10.195.0.10/24
             routes:
                 - to: 10.195.0.0/24
                   via: 10.195.0.1
         ens211f1np1:
-            mtu: 9216
+            mtu: 9000
             addresses:
             - 10.195.0.11/24
-            routes:
-                - to: 10.195.0.0/24
-                  via: 10.195.0.1
-        ens214f0np0:
-            mtu: 9216
-            addresses:
-            - 10.195.0.12/24
-            routes:
-                - to: 10.195.0.0/24
-                  via: 10.195.0.1
-        ens214f1np1:
-            mtu: 9216
-            addresses:
-            - 10.195.0.13/24
             routes:
                 - to: 10.195.0.0/24
                   via: 10.195.0.1
