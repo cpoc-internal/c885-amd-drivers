@@ -10,7 +10,7 @@ sudo tee "$NETPLAN_FILE" > /dev/null << EOF
 network:
     version: 2
     ethernets:
-        enp87s0:
+        enp86s0:
             mtu: 9000
             addresses:
             - 192.168.200.11/24
@@ -21,7 +21,7 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp109s0:
+        enp108s0:
             mtu: 9000
             addresses:
             - 192.168.200.12/24
@@ -32,7 +32,7 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp39s0:
+        enp38s0:
             mtu: 9000
             addresses:
             - 192.168.200.13/24
@@ -43,7 +43,7 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp13s0:
+        enp12s0:
             mtu: 9000
             addresses:
             - 192.168.200.14/24
@@ -54,7 +54,7 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp245s0:
+        enp244s0:
             mtu: 9000
             addresses:
             - 192.168.200.15/24
@@ -65,7 +65,7 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
         
-        enp209s0:
+        enp208s0:
             mtu: 9000
             addresses:
             - 192.168.200.16/24
@@ -76,7 +76,7 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp147s0:
+        enp146s0:
             mtu: 9000
             addresses:
             - 192.168.200.17/24
@@ -87,7 +87,7 @@ network:
                 - to: 192.168.200.0/24
                   via: 192.168.200.1
 
-        enp160s0:
+        enp159s0:
             mtu: 9000
             addresses:
             - 192.168.200.18/24
