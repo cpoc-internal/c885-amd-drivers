@@ -22,24 +22,28 @@ chmod +x install-amd-drivers-2204.sh
 
 Server 1
 ```
+cd c885-amd-drivers
  chmod +x netplan-config-1.sh
  ./netplan-config-1.sh
 ```
 
 Server 2
 ```
+cd c885-amd-drivers
  chmod +x netplan-config-2.sh
  ./netplan-config-2.sh
 ```
 
 Server 1 pollara
 ```
+cd c885-amd-drivers
  chmod +x netplan-pollara-1.sh
  ./netplan-pollara-1.sh
 ```
 
 Server 2 pollara
 ```
+cd c885-amd-drivers
  chmod +x netplan-pollara-2.sh
  ./netplan-pollara-2.sh
 ```
