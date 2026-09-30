@@ -6,10 +6,15 @@ ROCM drivers installation, this repository will help to install amdgpu Drivers,
 ```
 git clone https://github.com/cpoc-internal/c885-amd-drivers.git
 ```
-2. ROOT mode excute the sh file to install the drivers
+2. ROOT mode excute the sh file to install the drivers ubuntu
 ```
 chmod +x /root/c885-amd-drivers/install-amd-drivers-2204.sh
 sudo -u root /root/c885-amd-drivers/install-amd-drivers-2204.sh
+```
+2.0 ROOT mode excute the sh file to install the drivers debian
+```
+chmod +x /root/c885-amd-drivers/install-mi350-rocm.sh
+sudo -u root /root/c885-amd-drivers/install-mi350-rocm.sh
 ```
 2.1 NOn ROOT
 ```
